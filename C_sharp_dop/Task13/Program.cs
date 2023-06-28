@@ -1,50 +1,19 @@
 ﻿/*
-Дано вещественное число а. Пользуясь только операцией умножения, получить:
-а) a4 за две операции;
-б) a6  за три операции;
-в) a7 за четыре операции;
-г) a8  за три операции;
-д) a9 за четыре операции;
-е) a10  за четыре операции.
+Известно значение температуры по шкале Цельсия. 
+Найти соответствующее  значение температуры по шкале: 
+а) Фаренгейта; 
+б) Кельвина.
+Для пересчета по шкале Фаренгейта необходимо 
+исходное значение температуры умножить на 1,8 
+и к результату прибавить 32, 
+а по шкале Кельвина абсолютное значение нуля 
+соответствует 273,15 градуса по шкале Цельсия.
 */
 
-Console.WriteLine("Введите вещественное число a: ");
-double n = Convert.ToDouble(Console.ReadLine());
-double nFloat = n;
-nFloat = nFloat*nFloat;
-nFloat = nFloat*nFloat;
+Console.WriteLine("Введите значение температуры по шкале Цельсия: ");
+double tempC = Convert.ToDouble(Console.ReadLine());
+double tempF = tempC * 1.8 + 32;
+double tempK = tempC + 273.15;
 
-Console.WriteLine($"a4 за две операции = {nFloat}");
-
-nFloat = n;
-nFloat = nFloat*nFloat;
-nFloat = nFloat*nFloat*nFloat;
-
-Console.WriteLine($"a6 за три операции = {nFloat}");
-
-nFloat = n;
-nFloat = nFloat*nFloat;
-nFloat = nFloat*nFloat*nFloat*n;
-
-Console.WriteLine($"a7 за четыре операции = {nFloat}");
-
-nFloat = n;
-nFloat = nFloat*nFloat;
-nFloat = nFloat*nFloat;
-nFloat = nFloat*nFloat;
-
-Console.WriteLine($"a8 за три операции = {nFloat}");
-
-nFloat = n;
-nFloat = nFloat*nFloat;
-nFloat = nFloat*nFloat;
-nFloat = nFloat*nFloat*n;
-
-Console.WriteLine($"a9 за четыре операции = {nFloat}");
-
-nFloat = n;
-nFloat = nFloat*nFloat;
-nFloat = nFloat*nFloat*n;
-nFloat = nFloat*nFloat;
-
-Console.WriteLine($"a10 за четыре операции = {nFloat}");
+Console.WriteLine($"Значение температуры ппо шкале Фаренгейта = {tempF}");
+Console.WriteLine($"Значение температуры ппо шкале Кельвина = {tempK}");

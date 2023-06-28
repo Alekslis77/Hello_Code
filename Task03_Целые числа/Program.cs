@@ -6,7 +6,7 @@
 */
 Console.WriteLine("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-for (int i = -number; i == number; ++i)
+for (int i = - number; i <= number; i++)
 {
-    Console.WriteLine($"{number}, ");
+    Console.Write($"{i} "); // Console.Write(i+" ");
 }
