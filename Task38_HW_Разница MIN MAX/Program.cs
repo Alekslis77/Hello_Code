@@ -31,14 +31,14 @@ void OutDiffMinMaxArray(double[] arr)
     double minElement = arr[0];
     double maxElement = arr[0];
     double diff = 0;
-    for (int i = 0; i < arr.Length -1; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
-        Console.Write(string.Format("{0:0.00}\t", arr[i]));
+        Console.Write(string.Format("{0:0.00}", arr[i]));
         if (arr[i] > maxElement) maxElement = arr[i];
         else if (arr[i] < minElement) minElement = arr[i];
+        if (i < arr.Length - 1) Console.Write(", ");
     }
     diff = maxElement - minElement;
-    Console.Write(string.Format("{0:0.00}",arr[arr.Length - 1]));
     Console.ForegroundColor = ConsoleColor.Red;
     Console.Write(']');
     Console.ResetColor();
