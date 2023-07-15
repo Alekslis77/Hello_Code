@@ -7,4 +7,8 @@
 сигнал какого цвета горит для пешеходов в этот момент.
 */
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Enter number of minutes"); 
+double minutes = Convert.ToDouble(Console.ReadLine()); 
+minutes %= 5;
+if (minutes < 3) Console.WriteLine("Green light"); 
+else Console.WriteLine("Red light");
