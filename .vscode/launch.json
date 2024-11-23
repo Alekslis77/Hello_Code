@@ -4,15 +4,21 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": "C#: <project-name> Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/<relative-path-to-project-folder><project-name>.csproj"
+        },
         
         {
             "name": ".NET Core Launch (console)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/C_sharp_dop/Task02/bin/Debug/net6.0/Task02.dll",
+            "program": "${workspaceFolder}/Practice001/bin/Debug/net9.0/Practice001.dll", 
             "args": [],
-            "cwd": "${workspaceFolder}/C_sharp_dop/Task02",
+            "cwd": "${workspaceFolder}/Practice001",
             "console": "internalConsole",
             "stopAtEntry": false
         },

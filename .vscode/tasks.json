@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/C_sharp_dop/Task02/Task02.csproj",
+                "${workspaceFolder}/Practice001/Practice001.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/C_sharp_dop/Task02/Task02.csproj",
+                "${workspaceFolder}/Practice001/Practice001.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/C_sharp_dop/Task02/Task02.csproj"
+                "${workspaceFolder}/Practice001/Practice001.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
